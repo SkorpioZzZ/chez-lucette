@@ -40,7 +40,7 @@ Un style élégant et sombre, pensé comme la salle d'un restaurant le soir :
 - Données structurées Schema.org `Restaurant` : adresse, coordonnées GPS, horaires détaillés (`openingHoursSpecification`), gamme de prix, type de cuisine, lien vers la carte (`hasMenu`) et la réservation (`acceptsReservations`), note moyenne
 - Horaires écrits en HTML (lisibles par Google), pas dans une image
 - Balises Open Graph pour le partage sur les réseaux sociaux
-- `sitemap.xml` et `robots.txt`, URL canoniques, mentions légales en `noindex`
+- `sitemap.xml` et `robots.txt`, URL canoniques, toutes les pages en `noindex` (site de démo)
 - Accès transports en commun dans le texte (requêtes du type « restaurant près de République »)
 
 ## Technique
@@ -122,7 +122,7 @@ python3 -m http.server 8000
 
 puis allez sur http://localhost:8000.
 
-Le site peut être hébergé tel quel sur n'importe quel hébergement statique (GitHub Pages, Netlify, OVH...). Pensez à remplacer `https://example.com` par le vrai domaine dans les balises `canonical`, les données structurées, `robots.txt` et `sitemap.xml`.
+Le site peut être hébergé tel quel sur n'importe quel hébergement statique (GitHub Pages, Netlify, OVH...). La démo est publiée sur `https://skorpiozzz.github.io/chez-lucette/`. Toutes les pages portent `<meta name="robots" content="noindex">` pour que ce restaurant fictif ne soit pas indexé. Pour un vrai client, remplacez cette adresse par son domaine dans les balises `canonical`, `og:image`, les données structurées, `robots.txt` et `sitemap.xml`, puis retirez le `noindex`.
 
 ## Structure
 
