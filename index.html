@@ -10,7 +10,7 @@
   <meta property="og:type" content="restaurant">
   <meta property="og:title" content="Chez Lucette, bistrot de quartier à Paris 10e">
   <meta property="og:description" content="Cuisine maison de saison au bord du canal Saint-Martin. Réservez votre table en ligne.">
-  <meta property="og:image" content="https://skorpiozzz.github.io/chez-lucette/img/hero-salle.jpg">
+  <meta property="og:image" content="https://skorpiozzz.github.io/chez-lucette/img/og-image.jpg">
   <meta property="og:locale" content="fr_FR">
   <meta name="theme-color" content="#0f0e0c">
   <script>document.documentElement.classList.add("js");</script>
@@ -27,7 +27,7 @@
     "name": "Chez Lucette (établissement fictif)",
     "description": "Bistrot de quartier, cuisine maison de saison, au bord du canal Saint-Martin.",
     "url": "https://skorpiozzz.github.io/chez-lucette/",
-    "image": "https://skorpiozzz.github.io/chez-lucette/img/hero-salle.jpg",
+    "image": "https://skorpiozzz.github.io/chez-lucette/img/og-image.jpg",
     "telephone": "+33199005678",
     "priceRange": "€€",
     "servesCuisine": ["Française", "Bistrot"],
@@ -95,7 +95,7 @@
     <!-- hero plein écran -->
     <section class="hero">
       <!-- visuel de démo : à remplacer par une photo de la salle le soir (WebP, 1920px) -->
-      <img class="hero__bg" src="img/hero-salle.jpg" width="2000" height="1333" alt="" fetchpriority="high">
+      <img class="hero__bg" src="img/hero-salle.webp" srcset="img/hero-salle-800.webp 800w, img/hero-salle.webp 1600w" sizes="100vw" width="1600" height="1066" alt="" fetchpriority="high">
       <div>
         <p class="overline">Canal Saint-Martin · Paris 10e</p>
         <h1>Chez Lucette</h1>
@@ -114,7 +114,7 @@
     <section class="section">
       <div class="container story">
         <div class="story__media reveal">
-          <img src="img/maison-chef.jpg" width="900" height="1125" loading="lazy" alt="Le chef taille des légumes en cuisine">
+          <img src="img/maison-chef.webp" width="800" height="1000" loading="lazy" alt="Le chef taille des légumes en cuisine">
         </div>
         <div class="reveal">
           <p class="overline">La maison</p>
@@ -171,28 +171,28 @@
           <h2 id="galerie-titre">La salle, la terrasse, l'assiette</h2>
         </div>
         <div class="gallery reveal" data-gallery>
-          <button class="gallery__item g1" type="button" data-full="img/galerie-plat.jpg">
-            <img src="img/galerie-plat.jpg" width="1600" height="1067" loading="lazy" alt="Le plat du jour servi à table, entouré de pain grillé, burger-frites et cocktails">
+          <button class="gallery__item g1" type="button" data-full="img/galerie-plat-1200.webp">
+            <img src="img/galerie-plat.webp" width="800" height="534" loading="lazy" alt="Le plat du jour servi à table, entouré de pain grillé, burger-frites et cocktails">
             <span>Le plat du jour</span>
           </button>
-          <button class="gallery__item g2" type="button" data-full="img/galerie-terrasse.jpg">
-            <img src="img/galerie-terrasse.jpg" width="1600" height="1067" loading="lazy" alt="La terrasse sous les arbres, tables en marbre et globes lumineux">
+          <button class="gallery__item g2" type="button" data-full="img/galerie-terrasse-1200.webp">
+            <img src="img/galerie-terrasse.webp" width="800" height="534" loading="lazy" alt="La terrasse sous les arbres, tables en marbre et globes lumineux">
             <span>La terrasse</span>
           </button>
-          <button class="gallery__item g3" type="button" data-full="img/galerie-vins.jpg">
-            <img src="img/galerie-vins.jpg" width="1600" height="1067" loading="lazy" alt="Bouteilles de vin couchées sur les étagères de la cave">
+          <button class="gallery__item g3" type="button" data-full="img/galerie-vins-1200.webp">
+            <img src="img/galerie-vins.webp" width="800" height="534" loading="lazy" alt="Bouteilles de vin couchées sur les étagères de la cave">
             <span>Vins de vignerons</span>
           </button>
-          <button class="gallery__item g4" type="button" data-full="img/galerie-dessert.jpg">
-            <img src="img/galerie-dessert.jpg" width="900" height="1601" loading="lazy" alt="Verrine au chocolat, chantilly et biscuits concassés">
+          <button class="gallery__item g4" type="button" data-full="img/galerie-dessert-900.webp">
+            <img src="img/galerie-dessert.webp" width="500" height="889" loading="lazy" alt="Verrine au chocolat, chantilly et biscuits concassés">
             <span>Les desserts</span>
           </button>
-          <button class="gallery__item g5" type="button" data-full="img/galerie-salle.jpg">
-            <img src="img/galerie-salle.jpg" width="1600" height="1067" loading="lazy" alt="La salle : banquettes en cuir, chaises cognac et comptoir carrelé face à la cuisine ouverte">
+          <button class="gallery__item g5" type="button" data-full="img/galerie-salle-1200.webp">
+            <img src="img/galerie-salle.webp" width="800" height="534" loading="lazy" alt="La salle : banquettes en cuir, chaises cognac et comptoir carrelé face à la cuisine ouverte">
             <span>La salle</span>
           </button>
-          <button class="gallery__item g6" type="button" data-full="img/galerie-cuisine.jpg">
-            <img src="img/galerie-cuisine.jpg" width="1600" height="1067" loading="lazy" alt="Le chef saisit les viandes sur la plancha, en cuisine">
+          <button class="gallery__item g6" type="button" data-full="img/galerie-cuisine-1200.webp">
+            <img src="img/galerie-cuisine.webp" width="800" height="534" loading="lazy" alt="Le chef saisit les viandes sur la plancha, en cuisine">
             <span>En cuisine</span>
           </button>
         </div>
@@ -283,7 +283,7 @@
 
     <!-- bandeau réservation -->
     <section class="reserve-band">
-      <img src="img/galerie-vins.jpg" width="1600" height="1067" loading="lazy" alt="">
+      <img src="img/galerie-vins-1200.webp" srcset="img/galerie-vins.webp 800w, img/galerie-vins-1200.webp 1200w" sizes="100vw" width="1200" height="800" loading="lazy" alt="">
       <div class="container reveal">
         <p class="overline">Réservation</p>
         <h2>Une table pour ce soir&nbsp;?</h2>

@@ -86,18 +86,25 @@ Les photos du dossier `img/` viennent d'[Unsplash](https://unsplash.com). Elles 
 
 | Fichier | Contenu | Photographe | Source |
 |---|---|---|---|
-| `hero-salle.jpg` | salle de restaurant, comptoir | Martin Baron | [AzsTi2sleZY](https://unsplash.com/photos/AzsTi2sleZY) |
-| `maison-chef.jpg` | chef qui taille des légumes (recadré en portrait) | Pylyp Sukhenko | [y-XZf_TNRms](https://unsplash.com/photos/y-XZf_TNRms) |
-| `galerie-plat.jpg` | plat servi à table | Spencer Davis | [W_GSHCi0cR8](https://unsplash.com/photos/W_GSHCi0cR8) |
-| `galerie-terrasse.jpg` | terrasse sur le trottoir | ayumi kubo | [h-wj-v9FZjM](https://unsplash.com/photos/h-wj-v9FZjM) |
-| `galerie-vins.jpg` | bouteilles sur étagères | Javier Balseiro | [jDU4yYk5Kgs](https://unsplash.com/photos/jDU4yYk5Kgs) |
-| `galerie-dessert.jpg` | verrine chocolat | Emile Mbunzama | [cLpdEA23Z44](https://unsplash.com/photos/cLpdEA23Z44) |
-| `galerie-salle.jpg` | salle, banquettes en cuir | Nick Karvounis | [Ciqxn7FE4vE](https://unsplash.com/photos/Ciqxn7FE4vE) |
-| `galerie-cuisine.jpg` | chef en cuisine | Ahmet Safa Türkyılmaz | [F9v4iq0RDZ0](https://unsplash.com/photos/F9v4iq0RDZ0) |
+| `hero-salle` | salle de restaurant, comptoir | Martin Baron | [AzsTi2sleZY](https://unsplash.com/photos/AzsTi2sleZY) |
+| `maison-chef` | chef qui taille des légumes (recadré en portrait) | Pylyp Sukhenko | [y-XZf_TNRms](https://unsplash.com/photos/y-XZf_TNRms) |
+| `galerie-plat` | plat servi à table | Spencer Davis | [W_GSHCi0cR8](https://unsplash.com/photos/W_GSHCi0cR8) |
+| `galerie-terrasse` | terrasse sur le trottoir | ayumi kubo | [h-wj-v9FZjM](https://unsplash.com/photos/h-wj-v9FZjM) |
+| `galerie-vins` | bouteilles sur étagères | Javier Balseiro | [jDU4yYk5Kgs](https://unsplash.com/photos/jDU4yYk5Kgs) |
+| `galerie-dessert` | verrine chocolat | Emile Mbunzama | [cLpdEA23Z44](https://unsplash.com/photos/cLpdEA23Z44) |
+| `galerie-salle` | salle, banquettes en cuir | Nick Karvounis | [Ciqxn7FE4vE](https://unsplash.com/photos/Ciqxn7FE4vE) |
+| `galerie-cuisine` | chef en cuisine | Ahmet Safa Türkyılmaz | [F9v4iq0RDZ0](https://unsplash.com/photos/F9v4iq0RDZ0) |
+
+Elles sont servies en WebP (27 à 130 Ko par fichier, environ 500 Ko pour toutes les photos de l'accueil sur mobile, contre 1,8 Mo en JPG) :
+
+- `hero-salle.webp` (1600 px) et `hero-salle-800.webp` : le navigateur choisit via `srcset` selon la largeur de l'écran ;
+- `galerie-*.webp` (800 px, 500 px pour le dessert en portrait) pour les vignettes, `galerie-*-1200.webp` (900 px pour le dessert) pour l'agrandissement ;
+- `maison-chef.webp` (800 px) ;
+- `og-image.jpg` (1200 × 630, en JPG pour tous les réseaux sociaux) : l'aperçu affiché quand le lien est partagé.
 
 Si une photo change, mettez à jour ce tableau et la section « Crédits » de [mentions-legales.html](mentions-legales.html).
 
-Sur un site client, elles sont remplacées par les photos de l'établissement en WebP (1600 px pour le haut de page, 800 px pour la galerie, 40 à 120 Ko chacune) :
+Sur un site client, elles sont remplacées par les photos de l'établissement en WebP, aux mêmes noms et dimensions (qualité 70 à 75, 150 Ko maximum par fichier) :
 
 | Fichier | Photo attendue |
 |---|---|
