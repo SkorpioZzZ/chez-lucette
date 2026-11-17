@@ -421,6 +421,9 @@ strong { font-weight: 500; }
 /* Mentions légales */
 .legal { max-width: 740px; margin-inline: auto; padding: clamp(3rem, 7vw, 5rem) var(--gutter) clamp(5rem, 10vw, 7rem); color: #cfc6b7; }
 .legal h2 { font-size: 2rem; color: var(--cream); margin: 2.75rem 0 0.75rem; }
+.legal a { color: var(--cream); text-decoration: underline; text-underline-offset: 0.2em; }
+.legal__credits { margin: 1rem 0 0; padding-left: 1.2rem; }
+.legal__credits li { margin: 0.35rem 0; }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
