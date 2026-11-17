@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chez Lucette, bistrot au bord du canal Saint-Martin | Paris 10e</title>
+  <meta name="description" content="Bistrot de quartier à Paris 10e, au bord du canal Saint-Martin. Cuisine maison de saison, formule déjeuner à 19 €, brunch le dimanche. Réservation en ligne.">
+  <link rel="canonical" href="https://example.com/">
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Chez Lucette, bistrot de quartier à Paris 10e">
+  <meta property="og:description" content="Cuisine maison de saison au bord du canal Saint-Martin. Réservez votre table en ligne.">
+  <meta property="og:image" content="https://example.com/img/hero-salle.svg">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="theme-color" content="#0f0e0c">
+  <script>document.documentElement.classList.add("js");</script>
+  <link rel="preload" href="fonts/cormorant-garamond-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/jost-latin-300-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230f0e0c'/%3E%3Ctext x='16' y='23' text-anchor='middle' font-family='Georgia,serif' font-size='20' fill='%23c8a96a'%3EL%3C/text%3E%3C/svg%3E">
+
+  <!-- Données structurées pour Google (fiche établissement local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Chez Lucette (établissement fictif)",
+    "description": "Bistrot de quartier, cuisine maison de saison, au bord du canal Saint-Martin.",
+    "url": "https://example.com/",
+    "image": "https://example.com/img/hero-salle.svg",
+    "telephone": "+33199005678",
+    "priceRange": "€€",
+    "servesCuisine": ["Française", "Bistrot"],
+    "acceptsReservations": "https://example.com/reservation.html",
+    "hasMenu": "https://example.com/carte.html",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Quai de Jemmapes",
+      "addressLocality": "Paris",
+      "postalCode": "75010",
+      "addressCountry": "FR"
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 48.8716, "longitude": 2.3652 },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "12:00", "closes": "14:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "19:00", "closes": "22:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "15:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "19:00", "closes": "23:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "11:30", "closes": "15:30" }
+    ],
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "reviewCount": "312" }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="header">
+    <p class="demo-banner">Site de démonstration réalisé par Alexandre Zapolski · Établissement fictif</p>
+    <div class="container header__inner">
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="overlay">
+        <span class="menu-btn__icon" aria-hidden="true"></span>
+        <span class="menu-btn__label">Menu</span>
+      </button>
+      <nav class="header__nav" aria-label="Navigation principale">
+        <ul>
+          <li><a href="carte.html">La carte</a></li>
+          <li><a href="index.html#galerie">Photos</a></li>
+          <li><a href="index.html#infos">Accès</a></li>
+        </ul>
+      </nav>
+      <a class="logo" href="index.html" aria-label="Chez Lucette, accueil">
+        <strong>Chez Lucette</strong>
+        <small>Bistrot · Paris 10e</small>
+      </a>
+      <div class="header__end">
+        <a class="btn btn--small header__book" href="reservation.html">Réserver</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- navigation plein écran (mobile) -->
+  <nav class="overlay" id="overlay" aria-label="Navigation mobile">
+    <ul>
+      <li><a href="index.html" aria-current="page">Accueil</a></li>
+      <li><a href="carte.html">La carte</a></li>
+      <li><a href="index.html#galerie">Photos</a></li>
+      <li><a href="index.html#infos">Horaires &amp; accès</a></li>
+      <li><a href="reservation.html">Réserver</a></li>
+    </ul>
+    <p>Quai de Jemmapes, Paris 10e · <a href="tel:+33199005678">01 99 00 56 78</a></p>
+  </nav>
+
+  <main id="contenu">
+    <!-- hero plein écran -->
+    <section class="hero">
+      <!-- visuel de démo : à remplacer par une photo de la salle le soir (WebP, 1920px) -->
+      <img class="hero__bg" src="img/hero-salle.svg" width="1600" height="1000" alt="" fetchpriority="high">
+      <div>
+        <p class="overline">Canal Saint-Martin · Paris 10e</p>
+        <h1>Chez Lucette</h1>
+        <p class="hero__sub">Bistrot de quartier, cuisine du marché</p>
+        <div class="ornament" aria-hidden="true"><span></span></div>
+        <p class="status" data-status hidden></p>
+        <div class="hero__actions">
+          <a class="btn" href="reservation.html">Réserver une table</a>
+          <a class="link-line" href="carte.html">Découvrir la carte <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+      <span class="scroll-cue" aria-hidden="true"></span>
+    </section>
+
+    <!-- la maison -->
+    <section class="section">
+      <div class="container story">
+        <div class="story__media reveal">
+          <img src="img/galerie-salle.svg" width="800" height="1000" loading="lazy" alt="La salle du bistrot, le soir">
+        </div>
+        <div class="reveal">
+          <p class="overline">La maison</p>
+          <h2>Une cuisine simple, <em>faite ici, chaque jour</em></h2>
+          <p>Tout est préparé sur place à partir de produits frais : légumes d'Île-de-France, viandes de la boucherie de la rue, pain de la boulangerie d'à côté. L'ardoise change chaque semaine avec les arrivages.</p>
+          <p>Le midi, on vient pour la formule. Le soir, on prend son temps autour d'une bouteille de vigneron. Le dimanche, on brunche en terrasse, face au canal.</p>
+          <p class="signature">Lucette &amp; toute l'équipe</p>
+          <div class="facts">
+            <div><strong>45</strong><span>couverts</span></div>
+            <div><strong>4,7</strong><span>sur Google</span></div>
+            <div><strong>1987</strong><span>depuis</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- formules -->
+    <section class="section section--alt" aria-labelledby="formules-titre">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="overline">À table</p>
+          <h2 id="formules-titre">Nos formules</h2>
+          <p>Prix nets, service compris. La carte complète, les desserts et les vins sont sur la page dédiée.</p>
+        </div>
+        <div class="offers reveal">
+          <article class="offer">
+            <h3>Le déjeuner</h3>
+            <p class="offer__when">Du mardi au vendredi</p>
+            <p class="offer__price">19<small>€</small></p>
+            <p>Entrée et plat, ou plat et dessert, selon l'ardoise du jour. Café offert.</p>
+          </article>
+          <article class="offer">
+            <h3>Le dîner</h3>
+            <p class="offer__when">Du mardi au samedi</p>
+            <p class="offer__price">36<small>€</small></p>
+            <p>Entrée, plat et dessert à la carte. Accord mets et vins pour 18 € de plus.</p>
+          </article>
+          <article class="offer">
+            <h3>Le brunch</h3>
+            <p class="offer__when">Le dimanche</p>
+            <p class="offer__price">28<small>€</small></p>
+            <p>Boisson chaude, jus pressé, viennoiseries, assiette salée et douceur du jour.</p>
+          </article>
+        </div>
+        <p class="center"><a class="link-line" href="carte.html">Voir la carte complète <span aria-hidden="true">→</span></a></p>
+      </div>
+    </section>
+
+    <!-- galerie -->
+    <section class="section" id="galerie" aria-labelledby="galerie-titre">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="overline">En images</p>
+          <h2 id="galerie-titre">La salle, la terrasse, l'assiette</h2>
+        </div>
+        <div class="gallery reveal" data-gallery>
+          <button class="gallery__item g1" type="button" data-full="img/galerie-plat.svg">
+            <img src="img/galerie-plat.svg" width="800" height="1000" loading="lazy" alt="Le plat du jour : suprême de volaille et légumes de saison">
+            <span>Le plat du jour</span>
+          </button>
+          <button class="gallery__item g2" type="button" data-full="img/galerie-terrasse.svg">
+            <img src="img/galerie-terrasse.svg" width="1000" height="800" loading="lazy" alt="La terrasse face au canal Saint-Martin">
+            <span>La terrasse</span>
+          </button>
+          <button class="gallery__item g3" type="button" data-full="img/galerie-vins.svg">
+            <img src="img/galerie-vins.svg" width="800" height="800" loading="lazy" alt="Sélection de vins de vignerons">
+            <span>Vins de vignerons</span>
+          </button>
+          <button class="gallery__item g4" type="button" data-full="img/galerie-dessert.svg">
+            <img src="img/galerie-dessert.svg" width="800" height="800" loading="lazy" alt="Tarte aux fruits rouges maison">
+            <span>Les desserts</span>
+          </button>
+          <button class="gallery__item g5" type="button" data-full="img/galerie-salle.svg">
+            <img src="img/galerie-salle.svg" width="800" height="1000" loading="lazy" alt="La salle et son comptoir en zinc">
+            <span>La salle</span>
+          </button>
+          <button class="gallery__item g6" type="button" data-full="img/galerie-cuisine.svg">
+            <img src="img/galerie-cuisine.svg" width="1000" height="800" loading="lazy" alt="Le chef en cuisine">
+            <span>En cuisine</span>
+          </button>
+        </div>
+      </div>
+
+      <dialog class="lightbox" aria-label="Photo agrandie">
+        <button class="lightbox__close" type="button" aria-label="Fermer">&times;</button>
+        <img src="" alt="">
+        <p></p>
+      </dialog>
+    </section>
+
+    <!-- avis -->
+    <section class="section section--alt" aria-labelledby="avis-titre">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="overline">Ils en parlent</p>
+          <h2 id="avis-titre">Avis de nos clients</h2>
+        </div>
+        <div class="reviews reveal">
+          <figure class="review">
+            <div class="review__stars" aria-label="5 étoiles sur 5">★★★★★</div>
+            <blockquote><p>« Une vraie adresse de quartier. La formule du midi est généreuse, le service attentionné. »</p></blockquote>
+            <figcaption>Sophie M. · il y a 2 semaines</figcaption>
+          </figure>
+          <figure class="review">
+            <div class="review__stars" aria-label="5 étoiles sur 5">★★★★★</div>
+            <blockquote><p>« Le brunch du dimanche en terrasse, au bord du canal. Difficile de faire mieux. »</p></blockquote>
+            <figcaption>Thomas L. · il y a 1 mois</figcaption>
+          </figure>
+          <figure class="review">
+            <div class="review__stars" aria-label="4 étoiles sur 5">★★★★<span style="opacity:.3">★</span></div>
+            <blockquote><p>« Belle cuisine de saison et une très jolie carte des vins. On y retourne. »</p></blockquote>
+            <figcaption>Nadia K. · il y a 1 mois</figcaption>
+          </figure>
+        </div>
+        <p class="rating"><strong>4,7 / 5</strong> sur 312 avis Google</p>
+        <p class="note">Avis fictifs à titre de démonstration. Sur un site réel, ils seraient repris de la fiche Google de l'établissement.</p>
+      </div>
+    </section>
+
+    <!-- horaires + plan -->
+    <section class="section" id="infos" aria-labelledby="infos-titre">
+      <div class="container">
+        <div class="section__head reveal">
+          <p class="overline">Nous rendre visite</p>
+          <h2 id="infos-titre">Horaires &amp; accès</h2>
+        </div>
+        <div class="visit reveal">
+          <div>
+            <h3>Horaires</h3>
+            <!-- source unique des horaires : le JS lit data-slots pour le statut "ouvert" et les créneaux -->
+            <table class="hours" data-hours>
+              <caption class="visually-hidden">Horaires d'ouverture</caption>
+              <tbody>
+                <tr data-day="1" data-slots=""><th scope="row">Lundi</th><td class="closed">Fermé</td></tr>
+                <tr data-day="2" data-slots="12:00-14:30,19:00-22:30"><th scope="row">Mardi</th><td>12h – 14h30 · 19h – 22h30</td></tr>
+                <tr data-day="3" data-slots="12:00-14:30,19:00-22:30"><th scope="row">Mercredi</th><td>12h – 14h30 · 19h – 22h30</td></tr>
+                <tr data-day="4" data-slots="12:00-14:30,19:00-22:30"><th scope="row">Jeudi</th><td>12h – 14h30 · 19h – 22h30</td></tr>
+                <tr data-day="5" data-slots="12:00-14:30,19:00-22:30"><th scope="row">Vendredi</th><td>12h – 14h30 · 19h – 22h30</td></tr>
+                <tr data-day="6" data-slots="12:00-15:00,19:00-23:00"><th scope="row">Samedi</th><td>12h – 15h · 19h – 23h</td></tr>
+                <tr data-day="0" data-slots="11:30-15:30"><th scope="row">Dimanche</th><td>11h30 – 15h30 · brunch</td></tr>
+              </tbody>
+            </table>
+
+            <address class="address">
+              Quai de Jemmapes<br>75010 Paris<br>
+              <a href="tel:+33199005678">01 99 00 56 78</a>
+            </address>
+            <ul class="access">
+              <li>Métro Jacques Bonsergent (ligne 5), à 4 minutes</li>
+              <li>Métro République (lignes 3, 5, 8, 9, 11), à 7 minutes</li>
+              <li>Salle accessible en fauteuil roulant</li>
+            </ul>
+            <a class="link-line" href="https://www.google.com/maps/dir/?api=1&amp;destination=Quai+de+Jemmapes+75010+Paris" target="_blank" rel="noopener">Itinéraire Google Maps <span aria-hidden="true">↗</span></a>
+          </div>
+
+          <!-- Plan Google Maps : chargé seulement au clic, pour ne pas déposer de cookies Google sans accord (RGPD) -->
+          <div class="map" data-map data-src="https://www.google.com/maps?q=Quai+de+Jemmapes,+75010+Paris&amp;z=16&amp;output=embed">
+            <div class="map__consent">
+              <p><strong>Plan d'accès</strong>Le plan est fourni par Google Maps. En l'affichant, vous acceptez que Google dépose des cookies.</p>
+              <div><button class="btn btn--small" type="button">Afficher le plan</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- bandeau réservation -->
+    <section class="reserve-band">
+      <img src="img/galerie-vins.svg" width="800" height="800" loading="lazy" alt="">
+      <div class="container reveal">
+        <p class="overline">Réservation</p>
+        <h2>Une table pour ce soir&nbsp;?</h2>
+        <p>Réservez en ligne en une minute, confirmation par SMS.</p>
+        <a class="btn btn--solid" href="reservation.html">Réserver une table</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a class="logo" href="index.html" aria-label="Chez Lucette, accueil">
+        <strong>Chez Lucette</strong>
+        <small>Bistrot · Paris 10e</small>
+      </a>
+      <div class="footer__cols">
+        <div>
+          <h2>Adresse</h2>
+          <ul>
+            <li>Quai de Jemmapes</li>
+            <li>75010 Paris</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="tel:+33199005678">01 99 00 56 78</a></li>
+            <li><a href="mailto:contact@example.com">contact@example.com</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Horaires</h2>
+          <ul>
+            <li>Mardi – samedi, midi et soir</li>
+            <li>Dimanche, brunch</li>
+            <li>Fermé le lundi</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span data-year>2026</span> Chez Lucette (établissement fictif) · <a href="mentions-legales.html">Mentions légales</a></span>
+        <span>Site réalisé par <a href="https://www.malt.fr/profile/alexandrezapolski">Alexandre Zapolski</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- barre d'action fixe sur mobile -->
+  <div class="mobile-bar">
+    <a href="tel:+33199005678">Appeler</a>
+    <a href="reservation.html">Réserver</a>
+  </div>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>

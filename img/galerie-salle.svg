@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+<defs>
+<linearGradient id="b" x1="0" y1="0" x2="0.4" y2="1"><stop offset="0" stop-color="#1a120e"/><stop offset="1" stop-color="#0a0807"/></linearGradient>
+<radialGradient id="l0" cx="0.3" cy="0.25" r="0.25"><stop offset="0" stop-color="#d99a4e" stop-opacity="0.6"/><stop offset="1" stop-color="#d99a4e" stop-opacity="0"/></radialGradient><radialGradient id="l1" cx="0.7" cy="0.25" r="0.25"><stop offset="0" stop-color="#d99a4e" stop-opacity="0.5"/><stop offset="1" stop-color="#d99a4e" stop-opacity="0"/></radialGradient><radialGradient id="l2" cx="0.5" cy="0.85" r="0.5"><stop offset="0" stop-color="#7a2e24" stop-opacity="0.35"/><stop offset="1" stop-color="#7a2e24" stop-opacity="0"/></radialGradient>
+<radialGradient id="v" cx=".5" cy=".5" r=".75"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".55"/></radialGradient>
+<filter id="g"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" seed="31" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 1  0 0 0 0 .95  0 0 0 0 .9  0 0 0 .07 0"/></filter>
+</defs>
+<rect width="800" height="1000" fill="url(#b)"/>
+<rect width="800" height="1000" fill="url(#l0)"/><rect width="800" height="1000" fill="url(#l1)"/><rect width="800" height="1000" fill="url(#l2)"/>
+<rect width="800" height="1000" filter="url(#g)"/>
+<rect width="800" height="1000" fill="url(#v)"/>
+<text x="32" y="968" fill="#ece4d6" fill-opacity=".45" font-family="Georgia, serif" font-style="italic" font-size="22">Photo · la salle</text>
+</svg>
