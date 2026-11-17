@@ -82,11 +82,27 @@ En démo, l'attribut `action` du formulaire est vide : rien n'est envoyé, un me
 
 ## Photos
 
-Les images du dossier `img/` sont des visuels de remplacement neutres (dégradés sombres en SVG, moins de 2 Ko chacun). Sur un site client, elles sont remplacées par de vraies photos en WebP (1600 px pour le haut de page, 800 px pour la galerie, 40 à 120 Ko chacune) :
+Les photos du dossier `img/` viennent d'[Unsplash](https://unsplash.com). Elles servent à la démonstration et ne montrent pas un vrai établissement. Toutes sont sous la [licence Unsplash](https://unsplash.com/license) standard, vérifiée photo par photo le 17/11/2026 (aucune n'est sous licence Unsplash+). Cette licence permet un usage commercial gratuit, sans autorisation à demander. Le crédit n'est pas obligatoire, mais il figure dans les mentions légales. Elle interdit de revendre les photos sans les modifier nettement, ou de les regrouper pour créer un service concurrent.
+
+| Fichier | Contenu | Photographe | Source |
+|---|---|---|---|
+| `hero-salle.jpg` | salle de restaurant, comptoir | Martin Baron | [AzsTi2sleZY](https://unsplash.com/photos/AzsTi2sleZY) |
+| `maison-chef.jpg` | chef qui taille des légumes (recadré en portrait) | Pylyp Sukhenko | [y-XZf_TNRms](https://unsplash.com/photos/y-XZf_TNRms) |
+| `galerie-plat.jpg` | plat servi à table | Spencer Davis | [W_GSHCi0cR8](https://unsplash.com/photos/W_GSHCi0cR8) |
+| `galerie-terrasse.jpg` | terrasse sur le trottoir | ayumi kubo | [h-wj-v9FZjM](https://unsplash.com/photos/h-wj-v9FZjM) |
+| `galerie-vins.jpg` | bouteilles sur étagères | Javier Balseiro | [jDU4yYk5Kgs](https://unsplash.com/photos/jDU4yYk5Kgs) |
+| `galerie-dessert.jpg` | verrine chocolat | Emile Mbunzama | [cLpdEA23Z44](https://unsplash.com/photos/cLpdEA23Z44) |
+| `galerie-salle.jpg` | salle, banquettes en cuir | Nick Karvounis | [Ciqxn7FE4vE](https://unsplash.com/photos/Ciqxn7FE4vE) |
+| `galerie-cuisine.jpg` | chef en cuisine | Ahmet Safa Türkyılmaz | [F9v4iq0RDZ0](https://unsplash.com/photos/F9v4iq0RDZ0) |
+
+Si une photo change, mettez à jour ce tableau et la section « Crédits » de [mentions-legales.html](mentions-legales.html).
+
+Sur un site client, elles sont remplacées par les photos de l'établissement en WebP (1600 px pour le haut de page, 800 px pour la galerie, 40 à 120 Ko chacune) :
 
 | Fichier | Photo attendue |
 |---|---|
 | `hero-salle` | la salle ou la devanture, en largeur |
+| `maison-chef` | le chef ou l'équipe, en portrait |
 | `galerie-plat` | le plat signature |
 | `galerie-terrasse` | la terrasse |
 | `galerie-salle` | la salle |
@@ -121,7 +137,7 @@ Le site peut être hébergé tel quel sur n'importe quel hébergement statique (
 ├── css/
 │   └── style.css
 ├── fonts/        polices WOFF2 auto-hébergées
-├── img/          illustrations SVG (à remplacer par des photos WebP)
+├── img/          photos Unsplash (à remplacer par celles de l'établissement)
 └── js/
     └── main.js
 ```
